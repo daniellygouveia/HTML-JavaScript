@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+function sorteia(n) {
+    return Math.round(Math.random() * n);
+
+}
+var numeroPensado = sorteia(10);
+var numeroRecebido = parseInt(prompt("Já pensei em um número, tente acertar!"));
+
+if(numeroRecebido == numeroPensado){
+    mostra("pensamos no mesmo numero");
+}
+else if (numeroRecebido < numeroPensado){
+    mostra("Você pensou em " + numeroRecebido + ", é um número menor, eu pensei em " + numeroPensado);
+}
+else if (numeroRecebido > numeroPensado){
+    mostra("Você pensou em " + numeroRecebido + ", é um número maior, eu pensei em " + numeroPensado);
+}
+else{
+    alert("ERRO! Recarregue a página e tente novamente.");
+    
+}
+</script>

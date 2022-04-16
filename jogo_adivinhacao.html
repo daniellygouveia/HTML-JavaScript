@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+	
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+	
+        document.write(frase);
+        pulaLinha();
+    }
+
+    alert("Vamos ver se você adivinha qual o número que estou pensando.\n Vamos começar?");
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    //console.log(numeroPensado); // Para testar quando você acerta
+    var chute = parseInt(prompt("Digite um númetro de 0 a 10!"));
+    
+    if(chute == numeroPensado) {
+
+        mostra("Você acertou!")
+    } else {
+        mostra("Hahaha! Você errou, o número pensado foi " + numeroPensado + ".")
+
+        mostra("Tente novamente!")
+    }
+</script>

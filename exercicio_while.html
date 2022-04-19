@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+    document.write("<br><br>");
+
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+
+}
+
+var numero = 0;
+
+mostra("Os números pares de 0 a 100 é:");
+
+while(numero <= 100) {
+    mostra(numero);
+    numero = numero+ 2;
+    
+}
+
+mostra("FIM!");
+</script>

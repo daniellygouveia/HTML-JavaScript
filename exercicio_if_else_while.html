@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+
+}
+
+
+
+var numero = 30;
+
+while(numero <= 40) { //enquanto a variavel numero for menor que 40 o while fica ativo
+console.log(numero);
+                            
+    if(numero == 33 || numero == 37){   //  || = condição OU
+        numero = numero+1;
+    }else{
+        mostra(numero);
+        numero = numero+1;
+    }
+    
+}
+mostra("FIM");
+</script>
